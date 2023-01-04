@@ -41,3 +41,37 @@ const user = {
 let cid = 1;
 // let customerId = <number>cid
 let customerId = cid;
+// Functions
+const addNum = (x, y) => {
+    return x + y;
+};
+const log = (message) => {
+    console.log(message);
+};
+const user1 = {
+    id: 1,
+    name: "femi",
+};
+const add = (x, y) => x + y;
+const sub = (x, y) => x - y;
+// Classes
+class Person {
+    constructor(id, name) {
+        this.id = id;
+        this.name = name;
+    }
+    register() {
+        return `${this.name} is now registerd`;
+    }
+}
+const femi = new Person(1, "falase");
+const mike = new Person(2, "femi");
+console.log(femi.register);
+console.log(femi, mike);
+// Generics
+const getArray = (items) => {
+    return new Array().concat(items);
+};
+let numARRAY = getArray([1, 2, 3, 4]);
+let strARRAY = getArray(["femi", "same", "dan"]);
+strARRAY.push('hello');
